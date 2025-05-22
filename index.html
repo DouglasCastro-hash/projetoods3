@@ -8,18 +8,102 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .hero {
+            background-image: url('https://ac24horas.com/wp-content/uploads/2022/06/assistsocial-min-1199x627-1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            color: white;
+        }
+
+        .hero-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .glow-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 0 15px rgba(52, 152, 219, 0.5);
+        }
+
+        .glow-button:hover {
+            background: #2980b9;
+            box-shadow: 0 0 20px rgba(52, 152, 219, 0.8);
+            transform: translateY(-2px);
+        }
+
+        .floating-button {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #2c3e50;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .floating-button:hover {
+            background: #34495e;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+    </style>
 </head>
 <body>
     <header class="header">
         <nav class="nav-container">
             <div class="logo">
-                <h1>Bem-Estar Social</h1>
+                <h1>eProjeto: Bem-Estar Social</h1>
             </div>
             <ul class="nav-menu">
                 <li><a href="#inicio">Início</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="estudos.html">Projetos</a></li>
             </ul>
         </nav>
     </header>
@@ -29,79 +113,16 @@
             <div class="hero-content">
                 <h2>Transformando Vidas Através do Desenvolvimento Sustentável</h2>
                 <p>Iniciativas que promovem o bem-estar e a qualidade de vida para pessoas em situação de subemprego</p>
-            </div>
-        </section>
-
-        <section id="artigos" class="articles">
-            <h2 class="section-title">Últimas Publicações</h2>
-            <div class="articles-grid">
-                <article class="article-card">
-                    <img src="https://via.placeholder.com/400x250" alt="Imagem ilustrativa">
-                    <div class="article-content">
-                        <h3>O Impacto do Subemprego na Saúde Mental</h3>
-                        <p class="article-meta">Publicado em 15 de Março, 2024</p>
-                        <p>Análise sobre como as condições precárias de trabalho afetam o bem-estar psicológico dos trabalhadores...</p>
-                        <a href="#" class="read-more">Ler mais</a>
-                    </div>
-                </article>
-
-                <article class="article-card">
-                    <img src="https://via.placeholder.com/400x250" alt="Imagem ilustrativa">
-                    <div class="article-content">
-                        <h3>Programas de Qualificação Profissional</h3>
-                        <p class="article-meta">Publicado em 10 de Março, 2024</p>
-                        <p>Iniciativas que estão transformando vidas através da capacitação profissional...</p>
-                        <a href="#" class="read-more">Ler mais</a>
-                    </div>
-                </article>
-
-                <article class="article-card">
-                    <img src="https://via.placeholder.com/400x250" alt="Imagem ilustrativa">
-                    <div class="article-content">
-                        <h3>Sustentabilidade e Inclusão Social</h3>
-                        <p class="article-meta">Publicado em 5 de Março, 2024</p>
-                        <p>Como projetos sustentáveis podem gerar oportunidades de trabalho digno...</p>
-                        <a href="#" class="read-more">Ler mais</a>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section id="projetos" class="projects">
-            <h2 class="section-title">Nossos Projetos</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Capacitação Profissional</h3>
-                    <p>Programas de formação técnica e profissional para pessoas em situação de vulnerabilidade.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Empreendedorismo Social</h3>
-                    <p>Incentivo à criação de negócios sustentáveis e inclusivos.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Saúde e Bem-estar</h3>
-                    <p>Projetos focados na promoção da saúde física e mental dos trabalhadores.</p>
-                </div>
+                <a href="estudos.html" class="glow-button">Conheça</a>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Contato</h3>
-                <p>Email: contapbong@gmail.com</p>
-            </div>
-            <div class="footer-section">
-                <h3>Redes Sociais</h3>
-                <div class="social-links">
-                    <a href="#">LinkedIn</a>
-                </div>
-            </div>
-        </div>
         <div class="footer-bottom">
             <p>&copy; 2024 Bem-Estar Social. Todos os direitos reservados.</p>
         </div>
     </footer>
+    <a href="https://forms.gle/vibNwjWmg36hR3qL7" class="floating-button" target="_blank">Participe</a>
 </body>
 </html>

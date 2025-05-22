@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos - Bem-Estar Social</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .studies-container {
+            max-width: 1200px;
+            margin: 100px auto 50px;
+            padding: 2rem;
+        }
+
+        .studies-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .studies-header h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .studies-header p {
+            color: #666;
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .publications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .publication-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .publication-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .publication-card h3 {
+            color: #2c3e50;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+
+        .publication-card p {
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .read-more {
+            display: inline-block;
+            padding: 8px 20px;
+            background: #5c6c7c;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .read-more:hover {
+            background: #4a5568;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #2c3e50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 2rem;
+            transition: background 0.3s ease;
+        }
+
+        .back-button:hover {
+            background: #34495e;
+        }
+
+        .floating-button {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #2c3e50;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .floating-button:hover {
+            background: #34495e;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <h1>eProjeto: Bem-Estar Social</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#inicio">Início</a></li>
+                <li><a href="estudos.html">Projetos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="studies-container">
+            <div class="studies-header">
+                <h1>Estudos</h1>
+                <p>Conheça nossos estudos e pesquisas sobre trabalho informal, saúde mental e bem-estar social.</p>
+            </div>
+
+            <div class="publications-grid">
+                <div class="publication-card">
+                    <h3><strong>Trabalho informal e saúde mental: Entenda Como Isso Está Conectado</strong></h3>
+                    <p>O trabalho informal vai além da falta de estabilidade financeira. A insegurança, as jornadas longas e a pressão constante para gerar renda impactam diretamente a saúde mental. Nesta matéria, você entenderá como a ansiedade, o estresse e até a depressão estão associados à rotina do trabalhador informal, além de como buscar formas de cuidado e apoio.</p>
+                    <a href="artigo-saude-mental.html" class="read-more">Ler mais</a>
+                </div>
+                <div class="publication-card">
+                    <h3><strong>Subemprego, o que é e como buscar qualificação profissional?</strong></h3>
+                    <p>Você sabe o que é subemprego? Nesta matéria, explicamos o conceito, as principais características desse tipo de trabalho e como ele impacta a vida das pessoas. Além disso, trazemos dicas de como buscar cursos gratuitos, oficinas e ferramentas de qualificação profissional para melhorar suas oportunidades, mesmo em meio às dificuldades.</p>
+                    <a href="artigo-qualificacao.html" class="read-more">Ler mais</a>
+                </div>
+                <div class="publication-card">
+                    <h3><strong>Entenda como a jornada de trabalho exaustiva dos empregos informais afeta a sua saúde mental e física.</strong></h3>
+                    <p>Trabalhar muito, sem descanso e sem garantia, pode gerar sérias consequências. Aqui você descobre como as longas jornadas no trabalho informal afetam não só sua saúde física — com dores, cansaço e problemas musculares —, mas também sua saúde mental, gerando ansiedade, estresse e esgotamento emocional.</p>
+                    <a href="artigo-jornada.html" class="read-more">Ler mais</a>
+                </div>
+                <div class="publication-card">
+                    <h3><strong>Dicas para uma melhor saúde financeira para uma estabilidade econômica mesmo no trabalho informal.</strong></h3>
+                    <p>Ter uma boa organização financeira é essencial, principalmente para quem vive do trabalho informal. Nesta matéria, você confere dicas práticas para organizar seus ganhos, controlar despesas, montar uma reserva de emergência e buscar formas de gerar renda extra, conquistando mais segurança e estabilidade no dia a dia.</p>
+                    <a href="artigo-saude-financeira.html" class="read-more">Ler mais</a>
+                </div>
+                <div class="publication-card">
+                    <h3><strong>Estresse, ansiedade e a importância de uma rede de apoio para quem está no trabalho informal.</strong></h3>
+                    <p>O trabalho informal gera insegurança e sobrecarga emocional. Ter uma rede de apoio — formada por família, amigos, grupos comunitários ou profissionais — faz toda a diferença na redução do estresse e da ansiedade. Nesta matéria, você vai entender como fortalecer seus vínculos e quando buscar ajuda profissional.</p>
+                    <a href="artigo-rede-apoio.html" class="read-more">Ler mais</a>
+                </div>
+                <div class="publication-card">
+                    <h3><strong>Desemprego e subemprego. Entenda mais sobre o assunto.</strong></h3>
+                    <p>Você conhece a diferença entre desemprego e subemprego? Nesta matéria, explicamos esses conceitos de forma simples, além de mostrar como essas realidades impactam a vida de milhares de pessoas. Também falamos sobre os desafios, os direitos e as possíveis soluções para enfrentar essa situação.</p>
+                    <a href="artigo-desemprego.html" class="read-more">Ler mais</a>
+                </div>
+                <div class="publication-card">
+                    <h3><strong>A dificuldade nos relacionamentos familiares para aqueles que estão no subemprego.</strong></h3>
+                    <p>O estresse, a preocupação constante com as finanças e o cansaço físico podem gerar conflitos e afastamento dentro da família. Aqui você entende como o subemprego impacta os relacionamentos familiares, além de receber dicas de como fortalecer a comunicação, o diálogo e o apoio mútuo.</p>
+                    <a href="artigo-relacionamentos.html" class="read-more">Ler mais</a>
+                </div>
+                <div class="publication-card">
+                    <h3><strong>Direitos trabalhistas nos empregos informais.</strong></h3>
+                    <p>Mesmo sem carteira assinada, quem trabalha de forma informal tem alguns direitos garantidos por lei. Nesta matéria, explicamos quais são esses direitos, como acessar serviços públicos, benefícios sociais e por que é importante buscar informações e se proteger, mesmo atuando na informalidade.</p>
+                    <a href="artigo-direitos.html" class="read-more">Ler mais</a>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="index.html" class="back-button">Voltar para a página inicial</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2024 Bem-Estar Social. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <a href="https://forms.gle/vibNwjWmg36hR3qL7" class="floating-button" target="_blank">Participe</a>
+</body>
+</html> 
